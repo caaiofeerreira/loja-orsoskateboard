@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Orso Skateboard - Camiseta</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="titulo-menu">
+      <div class="toggle-btn">
+        <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
+      </div>
+      <a href="index.html"><img class="header-logo" src="./img/logo-orsoskateboard.svg"></a>
+    </div>
+  <!-- BUSCA - BTN -->
+    <div class="header-busca">
+      <input type="text" name="" id="txtbusca" placeholder="O que você procura?">
+      <button class="btn-busca">Buscar</button>
+    </div>
+  <!-- NAV -->
+    <nav class="nav-list">
+      <ul>
+        <li class="list"><a href="shop.html">Shop</a></li>
+        <li class="list"><a href="https://showroom-orsoskateboard.vercel.app/"target="_blank">Showroom</a></li>
+        <li class="list"><a href="login.html">Login</a></li>
+        <li><ion-icon name="cart-outline" class="icon-cart"></ion-icon></li>
+      </ul>
+
+      <div class="dropdown-menu">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="https://showroom-orsoskateboard.vercel.app/" target="_blank">Showroom</a></li>
+      </div>
+
+      <div class="produtos-add">
+        <span>0</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CARRINHO -->
+  <div class="cart-add" id="cart-add">
+    <div class="cabecalho-cart">
+      <ion-icon name="cart-outline"></ion-icon>
+      <h2 class="titulo-cart">Carrinho</h2>
+    </div>
+    <div class="cart-list">
+    </div>
+  </div>
+
+  <main class="main">
+  <!-- MAIN - PRODUTO SELECIONADO -->
+    <section class="section">
+      <div class="section-img" id="detalhes_produto">
+        <img id="imagem_produto" src=""alt="">
+        <img id="imagemExtra_produto" src=""alt="">
+      </div>
+
+      <div class="section-introducao">
+        <h1 class="nome-produto" id="nome_produto"></h1>
+        <p class="descricao-produto">A camiseta ORSO eleva um item básico do skate
+        com um logotipo oversized em um tecido macio.
+        O tecido em jersey é macio no contato com a pele.</p>
+
+        <span class="preco-produto" id="preco_produto"></span>
+
+        <h3 class="titulo-tamanho">TAMANHO</h3>
+
+        <div class="tamanho">
+          <ul>
+            <li class="tamanho-produto">P</li>
+            <li class="tamanho-produto">M</li>
+            <li class="tamanho-produto">G</li>
+          </ul>
+        </div>
+        <div class="btn-comprar">
+          <button class="comprar">COMPRAR</button>
+        </div>
+
+        <div class="detalhes">
+          <h4 class="titulo-detalhes">Mais detalhes:</h4>
+          <ul>
+            <li class="list-detalhes">Caimento solto para uma sensação espaçosa</li>
+            <li class="list-detalhes">Gola com nervuras</li>
+            <li class="list-detalhes">100% algodão</li>
+            <li class="list-detalhes">Lavagem à máquina</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+   
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="footer-div">
+  <!-- REDES -->
+      <div class="footer-redes">
+        <ul>
+          <li class="redes"><a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon>Facebook</a></li>
+          <li class="redes"><a href="#"><ion-icon name="logo-instagram" class="icon"></ion-icon>Instagram</a></li>
+          <li class="redes"><a href="#"><ion-icon name="logo-twitter" class="icon"></ion-icon>Twitter</a></li>
+          <li class="redes"><a href="#"><ion-icon name="logo-youtube" class="icon"></ion-icon>Youtube</a></li>
+        </ul>
+      </div>
+  <!-- LOGO -->
+      <img class="footer-logo" src="./img/logo-orsoskateboard.svg">
+  <!-- CONTATO -->
+      <div class="footer-contato">
+        <h3 class="titulo-contato">CONTATO</h3>
+        <span><ion-icon name="mail-outline" class="icon"></ion-icon>ORSOskateboard@gmail.com</span>
+        <span><ion-icon name="call-outline" class="icon"></ion-icon>+55 (11) 9 9999-9999</span>
+      </div>
+    </div>
+  <!-- COPYRIGTH -->
+    <p class="footer-direitos">Copyrigth © 2024 ORSO.   Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="./Produtos_API/camisetas-api.js"></script>
+</body>
+</html>

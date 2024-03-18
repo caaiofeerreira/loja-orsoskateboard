@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import "css/header.css";
+@import "css/index.css";
+@import "css/shop.css";
+@import "css/camiseta.css";
+@import "css/carrinho.css";
+@import "css/login.css";
+@import "css/footer.css";
+
+:root{
+  --color-c0: #000000;
+  --color-c1: #0f0f0f;
+  --color-c2: #f0f0f0;
+  --color-c3: #9FCC2E;
+  --color-c4: #2B9348;
+  --color-c5: #077426;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}

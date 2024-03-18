@@ -1,0 +1,138 @@
+.cart-add{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-c2);
+  position: absolute;
+  z-index: 1;
+  right: 1px;
+  top: 80px;
+  border: 1px solid var(--color-c2);
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+}
+
+.cart-add.ativo{
+  visibility: visible;
+}
+
+.cabecalho-cart{
+  display: flex;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  background-color: var(--color-c1);
+}
+
+.cabecalho-cart ion-icon{
+  color: var(--color-c2);
+  font-size: 1.5rem;
+}
+
+.titulo-cart{
+  font-family: 'Poppins',sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--color-c3);
+  padding: 5px;
+}
+
+.cart-list{
+  text-align: center;
+  overflow-y: auto;
+  width: 350px;
+  height: 390px;
+}
+
+.cart-texto{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  color: var(--color-c1);
+  padding: 50px 0;
+}
+
+/* Produto add ao carrinho JS*/
+.cart-produto{
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto',sans-serif;
+  padding: 10px;
+  gap: 10px;
+}
+
+.cart-produto img{
+  width: 100px;
+  border-radius: 5px;
+}
+
+.cart-produto h1{
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+.cart-produto p{
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+.cart-produto span{
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+.lixeira-cart{
+  width: 30px;
+  cursor: pointer;
+}
+
+.valor-cart{
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  order: 3;
+}
+
+.valor-cart p{
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  background-color: var(--color-c2);
+}
+
+.btnFinalizar-compra{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-c4);
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  order: 4;
+}
+
+.btnFinalizar-compra:hover{
+  background-color: var(--color-c5);
+}
+
+.btnFinalizar-compra p{
+  font-family: 'Poppins',sans-serif;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.btnFinalizar-compra a{
+  list-style: none;
+  color: var(--color-c2);
+}
+
+@media (max-width: 660px){
+  .cart-add{
+    right: 5px;
+    top: 80px;
+  }
+  .titulo-cart{
+    margin-left: 20px;
+  } 
+}

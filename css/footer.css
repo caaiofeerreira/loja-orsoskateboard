@@ -1,0 +1,109 @@
+footer{
+  background-color: var(--color-c0);
+}
+
+.footer-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-redes{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.redes{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  color: var(--color-c2);
+  padding: 5px 0;
+}
+
+.redes a{
+  color: var(--color-c2);
+}
+
+.icon{
+  padding: 0 5px 0 0;
+}
+
+.footer-logo{
+  width: 150px;
+  opacity: .05;
+  padding: 50px 0;
+  margin-left: 140px;
+}
+
+.footer-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.titulo-contato{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--color-c2);
+}
+
+.footer-contato span{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  color: var(--color-c2);
+  padding: 5px 0;
+}
+
+.footer-direitos{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 300;
+  font-size: .7rem;
+  color: var(--color-c2);
+  text-align: center;
+}
+
+@media (max-width: 810px){
+  .redes{
+    font-size: .8rem;
+  }
+  .footer-logo{
+    margin-left: 120px;
+  }
+  .titulo-contato{
+    font-size: .9rem;
+  }
+  .footer-contato span{
+    font-size: .8rem;
+  }
+  .footer-direitos{
+    font-size: .6rem;
+  }
+}
+
+@media (max-width: 660px){
+  .footer-logo{
+    display: none;
+  }
+}
+
+@media (max-width: 430px){
+  .footer-redes,
+  .footer-contato{
+    padding: 20px;
+  }
+  .redes{
+    font-size: .7rem;
+  }
+  .titulo-contato{
+    font-size: .9rem;
+  }
+  .footer-contato span{
+    font-size: .7rem;
+  }
+  .footer-direitos{
+    font-size: .6rem;
+  }
+}

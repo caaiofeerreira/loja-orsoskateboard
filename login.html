@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Orso Skateboard - Login</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="titulo-menu">
+      <div class="toggle-btn">
+        <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
+      </div>
+      <a href="index.html"><img class="header-logo" src="./img/logo-orsoskateboard.svg"></a>
+    </div>
+  <!-- BUSCA - BTN -->
+    <div class="header-busca">
+      <input type="text" name="" id="txtbusca" placeholder="O que você procura?" id="inputBusca">
+      <button class="btn-busca">Buscar</button>
+    </div>
+  <!-- NAV -->
+    <nav class="nav-list">
+      <ul>
+        <li class="list"><a href="shop.html">Shop</a></li>
+        <li class="list"><a href="https://showroom-orsoskateboard.vercel.app/" target="_blank">Showroom</a></li>
+        <li class="list"><a href="login.html">Login</a></li>
+        <li><ion-icon name="cart-outline" class="icon-cart"></ion-icon></li>
+      </ul>
+
+      <div class="dropdown-menu">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="https://showroom-orsoskateboard.vercel.app/" target="_blank">Showrrom</a></li>
+      </div>
+
+      <div class="produtos-add">
+        <span>0</span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="cart-add" id="cart-add">
+    <div class="cabecalho-cart">
+      <ion-icon name="cart-outline"></ion-icon>
+      <h2 class="titulo-cart">Carrinho</h2>
+    </div>
+    <div class="cart-list">
+    </div>
+  </div>
+
+  <!-- MAIN-CAPA ORSO -->
+  <main class="main">
+    <section class="section-login">
+      <form class="form-login">
+        <h1 class="titulo-login">Login</h1>
+
+        <div class="login">
+          <label>Email</label>
+          <input type="email" name="email" id="loginEmail" required>
+          <label>Senha</label>
+          <input type="password" name="password" id="loginSenha" required>
+        </div>
+
+        <span class="msg-login"><a href="#">Esqueci meus dados de acesso</a></span>
+
+        <button class="btn-login">ENTRAR</button>
+
+        <span class="msg-redes">Acessar com rede social</span>
+
+        <div class="redes">
+          <button class="rede-google"><ion-icon name="logo-google"></ion-icon></button>
+          <button class="rede-facebook"><ion-icon name="logo-facebook"></ion-icon></button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section-cadastro">
+        <form class="form-cadastro">
+          <h1 class="titulo-cadastro">Cadastrar</h1>
+  
+          <div class="cadastro">
+            <label>Nome</label>
+            <input type="text" name="" id="">
+            <label>Sobrenome</label>
+            <input type="text" name="" id="">
+            <label>Email</label>
+            <input type="email" name="" id="">
+            <label>Senha</label>
+            <input type="password" name="" id="">
+            <label>Repetir senha</label>
+            <input type="password" name="" id="">
+          </div>
+  
+          <button class="btn-cadastro">CRIAR CONTA</button>
+  
+        </form>
+      </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="footer-div">
+  <!-- REDES -->
+      <div class="footer-redes">
+        <ul>
+          <li class="redes"><a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon>Facebook</a></li>
+          <li class="redes"><a href="#"><ion-icon name="logo-instagram" class="icon"></ion-icon>Instagram</a></li>
+          <li class="redes"><a href="#"><ion-icon name="logo-twitter" class="icon"></ion-icon>Twitter</a></li>
+          <li class="redes"><a href="#"><ion-icon name="logo-youtube" class="icon"></ion-icon>Youtube</a></li>
+        </ul>
+      </div>
+  <!-- LOGO -->
+      <img class="footer-logo" src="./img/logo-orsoskateboard.svg">
+  <!-- CONTATO -->
+      <div class="footer-contato">
+        <h3 class="titulo-contato">CONTATO</h3>
+        <span><ion-icon name="mail-outline" class="icon"></ion-icon>ORSOskateboard@gmail.com</span>
+        <span><ion-icon name="call-outline" class="icon"></ion-icon>+55 (11) 9 9999-9999</span>
+      </div>
+    </div>
+  <!-- COPYRIGTH -->
+    <p class="footer-direitos">Copyrigth © 2024 ORSO.   Todos os direitos reservados.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+  <script src="./Produtos_API/camisetas-api.js"></script>
+</body>
+</html>

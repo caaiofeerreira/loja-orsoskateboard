@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Camiseta ORSO OG",
+    "imagem": "./img/1.png",
+    "imagemExtra": "./img/1-2.png",
+    "preco": 79.90
+  },
+  {
+    "id": "Camiseta ORSO PIRATE",
+    "imagem": "./img/2.png",
+    "imagemExtra": "./img/2-2.png",
+    "preco" : 89.90
+  },
+  {
+    "id": "Camiseta ORSO TAG",
+    "imagem": "./img/3.png",
+    "imagemExtra": "./img/3-2.png",
+    "preco": 79.90
+  },
+  {
+    "id": "Camiseta ORSO RAP",
+    "imagem": "./img/4.png",
+    "imagemExtra": "./img/4-2.png",
+    "preco": 89.90
+  },
+  {
+    "id": "Camiseta ORSO RISC",
+    "imagem": "./img/5.png",
+    "imagemExtra": "./img/5-2.png",
+    "preco": 79.90
+  },
+  {
+    "id": "Camiseta ORSO POOH",
+    "imagem": "./img/6.png",
+    "imagemExtra": "./img/6-2.png",
+    "preco": 89.90
+  },
+  {
+    "id": "Camiseta ORSO MÁFIA",
+    "imagem": "./img/7.png",
+    "imagemExtra": "./img/7-2.png",
+    "preco": 79.90
+  },
+  {
+    "id": "Camiseta ORSO PIXE",
+    "imagem": "./img/8.png",
+    "imagemExtra": "./img/8-2.png",
+    "preco": 89.90
+  }
+]

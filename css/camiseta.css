@@ -1,0 +1,149 @@
+/* Main */
+.section{
+  display: flex;
+  background-color: var(--color-c2);
+}
+
+.section-img{
+  display: flex;
+  margin: 40px;
+  gap: 10px;
+}
+
+.section-img img{
+  width: 350px;
+  height: 390px;
+  border-radius: 5px;
+}
+
+.section-introducao{
+  margin: 20px;
+  grid-column: 2;
+}
+
+.nome-produto{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-c1);
+  padding: 10px 0;
+}
+
+.descricao-produto{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: var(--color-c1);
+  padding: 10px 0 20px;
+  line-height: 1.5;
+}
+
+.preco-produto{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.titulo-tamanho{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  color: var(--color-c1);
+  padding: 20px 0 10px 0;
+}
+
+.tamanho ul{
+  display: flex;
+}
+
+.tamanho-produto{
+  background-color: var(--color-c2);
+  font-family: 'Roboto',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 5px 25px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-tamanho{
+  visibility: hidden;
+}
+
+.tamanho-select{
+  background-color: var(--color-c1);
+  color: var(--color-c2);
+}
+
+.btn-comprar{
+  margin: 20px 0;
+}
+
+.comprar{
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  padding: 5px 50px;
+  background-color: var(--color-c4);
+  color: var(--color-c2);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.comprar:hover{
+  background-color: var(--color-c5);
+  transition: .3s;
+}
+
+.titulo-detalhes{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  color: var(--color-c1);
+  padding: 5px 0;
+}
+
+.list-detalhes{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  color: var(--color-c1);
+  line-height: 1.5;
+}
+
+@media (max-width: 1080px){
+  .section-img img{
+    width: 270px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 810px){
+  .section-img{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px){
+  .section{
+    flex-direction: column;
+  }
+  .section-img{
+    flex-direction: row;
+    margin: 20px 5px 0;
+    gap: 5px;
+  }
+  .section-img img{
+    width: 200px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 360px){
+  .section-img img{
+    width: 170px;
+    height: 210px;
+  }
+}
+
