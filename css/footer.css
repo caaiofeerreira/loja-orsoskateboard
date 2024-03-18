@@ -30,10 +30,10 @@ footer{
 }
 
 .footer-logo{
-  width: 150px;
+  width: 200px;
   opacity: .05;
   padding: 50px 0;
-  margin-left: 140px;
+  margin-left: 130px;
 }
 
 .footer-contato{
@@ -70,6 +70,7 @@ footer{
     font-size: .8rem;
   }
   .footer-logo{
+    width: 150px;
     margin-left: 120px;
   }
   .titulo-contato{
