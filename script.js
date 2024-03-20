@@ -6,28 +6,33 @@ import initVerificarFinalizarCompra from './js/module/verificar-finalizar-compra
 import initMensagemCart from './js/module/mensagem-carrinho.js';
 import initCriarProduto from './js/module/criar-produto.js';
 
-
 initMenuMobile();
 initAbrirFecharCarrinho();
 initTamanho();
 initVerificarFinalizarCompra();
 initMensagemCart();
-initComprar();
 
 let valorTotalCart = 0;
-let iconCartSpan = document.querySelector('.produtos-add span');
 let contadorProdutos = 0;
 
 function initValorTotal() {
+  const cart = document.querySelector('.cart-list');
   let valorCart = document.querySelector('.valor-cart');
+
   if (!valorCart) {
     valorCart = document.createElement('div');
     valorCart.classList.add('valor-cart');
     const cartValor = document.querySelector('.cart-add');
     cartValor.append(valorCart);
-  }
-  const valorTotalFormatado = valorTotalCart.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-  valorCart.innerHTML = `<p>${valorTotalFormatado}</p>`;
+  };
+
+  if (cart.children.length === 0) {
+    valorCart.style.display = 'none';
+  } else {
+    const valorTotalFormatado = valorTotalCart.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    valorCart.innerHTML = `<p>${valorTotalFormatado}</p>`;
+    valorCart.style.display = 'flex';
+  };
 };
 
 function initProdutoCarrinho() {
@@ -47,6 +52,7 @@ function initProdutoCarrinho() {
 
   contadorProdutos++;
 
+  let iconCartSpan = document.querySelector('.produtos-add span');
   iconCartSpan.innerText = contadorProdutos;
 
   const lixeiraCart = newCardProduto.querySelector('.lixeira-cart');
@@ -86,3 +92,4 @@ function initComprar(){
     initVerificarFinalizarCompra();
   });
 };
+initComprar();
