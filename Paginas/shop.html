@@ -6,24 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <title>Orso Skateboard - Shop</title>
 </head>
 <body>
   <!-- HEADER - NAV-->
   <header class="header">
-      <div class="titulo-menu">
-        <div class="toggle-btn">
-          <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
-        </div>
-        <a href="index.html"><img class="header-logo" src="./img/logo-orsoskateboard.png"></a>
+    <div class="titulo-menu">
+      <div class="toggle-btn">
+        <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
       </div>
+      <a href="../index.html"><img class="header-logo" src="../img/logo-orsoskateboard.png"></a>
+    </div>
+
   <!-- BUSCA - BTN -->
     <div class="header-busca">
       <input type="text" name="" id="txtbusca" placeholder="O que você procura?" id="inputBusca">
       <button class="btn-busca">Buscar</button>
     </div>
+    
   <!-- NAV -->
     <nav class="nav-list">
       <ul>
@@ -43,23 +45,23 @@
         <span>0</span>
       </div>
     </nav>
-  </header>
 
-  <!-- CARRINHO -->
-  <div class="cart-add" id="cart-add">
-    <div class="cabecalho-cart">
-      <ion-icon name="cart-outline"></ion-icon>
-      <h2 class="titulo-cart">Carrinho</h2>
+    <!-- CARRINHO -->
+    <div class="cart-add" id="cart-add">
+      <div class="cabecalho-cart">
+        <ion-icon name="cart-outline"></ion-icon>
+        <h2 class="titulo-cart">Carrinho</h2>
+      </div>
+      <div class="cart-list">
+      </div>
     </div>
-    <div class="cart-list">
-    </div>
-  </div>
+  </header>
 
   <!-- MAIN - SECTION - ASIDE -->
   <main class="main">
     
       <div class="cards" id="produtos">
-        <!-- CAMISETAS ADICIONADAS PELO JAVASCRIPT USANDO API-->
+        <!-- CAMISETAS ADICIONADAS PELO JAVASCRIPT USANDO JSON -->
       </div>
   </main>
 
@@ -76,7 +78,7 @@
         </ul>
       </div>
   <!-- LOGO -->
-      <img class="footer-logo" src="./img/logo-orsoskateboard.png">
+      <img class="footer-logo" src="../img/logo-orsoskateboard.png">
   <!-- CONTATO -->
       <div class="footer-contato">
         <h3 class="titulo-contato">CONTATO</h3>
@@ -88,7 +90,7 @@
     <p class="footer-direitos">Copyrigth © 2024 ORSO. Todos os direitos reservados.</p>
   </footer> 
 
-  <script tyoe="module" src="script.js"></script>
-  <script src="./Produtos_API/camisetas-api.js"></script>
+  <script type="module" src="../script.js"></script>
+  <script src="../Camisetas_JSON/camisetas.js"></script>
 </body>
 </html>

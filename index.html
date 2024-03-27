@@ -19,23 +19,25 @@
       </div>
       <a href="index.html"><img class="header-logo" src="./img/logo-orsoskateboard.png"></a>
     </div>
+    
   <!-- BUSCA - BTN -->
     <div class="header-busca">
       <input type="text" name="" id="txtbusca" placeholder="O que você procura?">
       <button class="btn-busca">Buscar</button>
     </div>
+
   <!-- NAV -->
     <nav class="nav-list">
       <ul>
-        <li class="list"><a href="shop.html">Shop</a></li>
+        <li class="list"><a href="./Paginas/shop.html">Shop</a></li>
         <li class="list"><a href="https://showroom-orsoskateboard.vercel.app/" target="_blank">Showroom</a></li>
-        <li class="list"><a href="login.html">Login</a></li>
+        <li class="list"><a href="./Paginas/login.html">Login</a></li>
         <li><ion-icon name="cart-outline" class="icon-cart"></ion-icon></li>
       </ul>
 
       <div class="dropdown-menu">
-        <li><a href="login.html">Login</a></li>
-        <li><a href="shop.html">Shop</a></li>
+        <li><a href="./Paginas/login.html">Login</a></li>
+        <li><a href="./Paginas/shop.html">Shop</a></li>
         <li><a href="https://showroom-orsoskateboard.vercel.app/" target="_blank">Showroom</a></li>
       </div>
 
@@ -43,17 +45,17 @@
         <span>0</span>
       </div>
     </nav>
-  </header>
 
-  <!-- CARRINHO -->
-  <div class="cart-add" id="cart-add">
-    <div class="cabecalho-cart">
-      <ion-icon name="cart-outline"></ion-icon>
-      <h2 class="titulo-cart">Carrinho</h2>
+    <!-- CARRINHO -->
+    <div class="cart-add" id="cart-add">
+      <div class="cabecalho-cart">
+        <ion-icon name="cart-outline"></ion-icon>
+        <h2 class="titulo-cart">Carrinho</h2>
+      </div>
+      <div class="cart-list">
+      </div>
     </div>
-    <div class="cart-list">
-    </div>
-  </div>
+  </header>
 
   <!-- MAIN-BANNER ORSO -->
   <main class="main">
@@ -91,6 +93,6 @@
   </footer>
 
   <script type="module" src="script.js"></script>
-  <script src="./Produtos_API/camisetas-api.js"></script>
+  <script src="./Camisetas_JSON/camisetas.js"></script>
 </body>
 </html>

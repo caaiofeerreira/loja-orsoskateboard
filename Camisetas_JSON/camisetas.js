@@ -22,7 +22,7 @@ function criarCamiseta(camiseta){
   `
   return divCard
 }
-fetchCamisetas('./Produtos_API/camisetas-api.json')
+fetchCamisetas('../Camisetas_JSON/camisetas.json')
 
 // Função que pega os detalhes do produto selecionado e redireciona a página mostrando mais detalhes
 function mostrarDetalhes(imagem, imagemExtra, nome, preco) {
@@ -33,7 +33,7 @@ function mostrarDetalhes(imagem, imagemExtra, nome, preco) {
   sessionStorage.setItem('produto_preco', preco);
 
   // Redireciona para a página 'camiseta-selecionada'
-  window.location.href = 'camiseta-selecionada.html';
+  window.location.href = 'camiseta.html';
 }
 
 // Obter informações do produto da sessão
