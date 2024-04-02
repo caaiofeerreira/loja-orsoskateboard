@@ -9,7 +9,7 @@
   {
     "id": "Camiseta ORSO PIRATE",
     "imagem": "../img/2.png",
-    "imagemExtra": "./img/2-2.png",
+    "imagemExtra": "../img/2-2.png",
     "preco" : 89.90,
     "descricao": "A camiseta ORSO PIRATE eleva um item básico do skate com um logotipo oversized em um tecido macio. O tecido em jersey é macio no contato com a pele."
   },

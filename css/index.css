@@ -1,4 +1,3 @@
-
 /* Main */
 .main-img{
   background-color: var(--color-c2);
@@ -22,19 +21,17 @@
 }
 
 @media (max-width: 660px){
+  .main-img-mobile{
+    display: flex;
+    justify-content: center;
+  }
   .main-img img{
     display: none;
   }
   .main-img-mobile img{
     display: block;
     width: 400px;
-    margin: 10px 0px 0px 5px;
-  }
-}
-
-@media (max-width: 430px){
-  .main-img-mobile img{
-    margin: 10px 0 0 10px;
+    margin-top: 10px;
   }
 }
 
